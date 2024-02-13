@@ -35,8 +35,8 @@ body {
     display: flex;
     align-items: center;
     margin: auto;
-    width: 24em;
-    height: 24em;
+    width: 24.5em;
+    height: 24.5em;
     border: 10px solid;
     background-color: #000000;
     border-color: #000000;
@@ -44,12 +44,24 @@ body {
 }
 
 .puzzle-area {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     align-items: center;
-    margin: auto;
-    width: 23.5em;
-    height: 23.5em;
+    justify-content: center;
+    gap: 0.1em;
     background-color: #808080;
+    width: 24em;
+    height: 24em;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.piece-img {
+    width: 8em;
+    height: 8em;
+    object-fit: cover;
 }
 
 .start-game {
