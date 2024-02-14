@@ -4,7 +4,6 @@ body {
     background-color: #3498e9;
     padding-left: 20%;
     padding-right: 20%;
-    padding-top: 0%;
 }
 
 .heading {
@@ -33,7 +32,7 @@ body {
 
 .puzzle-area {
     margin: auto;
-
+    
 }
 
 .tile1,
@@ -46,8 +45,10 @@ body {
 .tile8,
 .tile9 {
     display: table-cell;
-    width: 180px;
     height: 180px;
+    min-height: 180px;
+    width: 180px;
+    min-width: 180px;
     border: 1px solid white;
     background: url("../images/full-puppy-img-540px.png");
     cursor: pointer;
