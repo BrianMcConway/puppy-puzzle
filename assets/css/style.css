@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Honk&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
-
 body {
     background-color: #3498e9;
     padding-left: 20%;
@@ -12,6 +11,7 @@ body {
     text-align: center;
     font-family: 'Honk', sans-serif;
     font-size: 100px;
+    margin: 0;
 }
 
 .stats {
@@ -31,37 +31,63 @@ body {
     background-color: #f0f8ff;
 }
 
-.container {
-    display: flex;
-    align-items: center;
-    margin: auto;
-    width: 24.5em;
-    height: 24.5em;
-    border: 10px solid;
-    background-color: #000000;
-    border-color: #000000;
-    border-radius: 10px;
-}
-
 .puzzle-area {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    align-items: center;
-    justify-content: center;
-    gap: 0.1em;
-    background-color: #808080;
-    width: 24em;
-    height: 24em;
     margin: auto;
-    border-radius: 10px;
-    overflow: hidden;
+
 }
 
-.piece-img {
-    width: 8em;
-    height: 8em;
-    object-fit: cover;
+.tile1,
+.tile2,
+.tile3,
+.tile4,
+.tile5,
+.tile6,
+.tile7,
+.tile8,
+.tile9 {
+    display: table-cell;
+    width: 180px;
+    height: 180px;
+    border: 1px solid white;
+    background: url("../images/full-puppy-img-540px.png");
+    cursor: pointer;
+}
+
+.tile1 {
+    background-position: left top;
+}
+
+.tile2 {
+    background-position: center top;
+}
+
+.tile3 {
+    background: #ffffff;
+    cursor: default;
+}
+
+.tile4 {
+    background-position: left center;
+}
+
+.tile5 {
+    background-position: center center;
+}
+
+.tile6 {
+    background-position: right center;
+}
+
+.tile7 {
+    background-position: left bottom;
+}
+
+.tile8 {
+    background-position: center bottom;
+}
+
+.tile9 {
+    background-position: right bottom;
 }
 
 .start-game {
@@ -72,10 +98,4 @@ body {
     border: 3px solid #000;
     border-radius: 10px;
     padding: 10px;
-}
-
-.footer {
-    position: absolute;
-    bottom: 0;
-
 }
